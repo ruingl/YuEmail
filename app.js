@@ -49,11 +49,12 @@ app.get('/intro', (req, res) => {
   res.render('intro');
 })
 
-app.post('/register', async (req, res) => {
-  const { username, password } = req.body;
+// app.post('/signup' route
+app.post('/signup', async (req, res) => {
+  const { username, password, email } = req.body;
 
   try {
-    await User.create({ username, password });
+    await User.create({ username, password, email });
     res.redirect('/');
   } catch (error) {
     console.error('Error registering user:', error.message);
