@@ -1,8 +1,8 @@
 // models/User.js
-const { DataTypes } = require('sequelize');
-const sequelize = require('../connectDB/connectDB');
+const { DataTypes } = require("sequelize");
+const sequelize = require("../connectDB/connectDB");
 
-const User = sequelize.define('User', {
+const User = sequelize.define("User", {
   username: {
     type: DataTypes.STRING,
     allowNull: false,

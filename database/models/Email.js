@@ -1,7 +1,7 @@
-const { DataTypes } = require('sequelize');
-const sequelize = require('../connectDB/connectDB'); // Adjust the path based on your project structure
+const { DataTypes } = require("sequelize");
+const sequelize = require("../connectDB/connectDB"); // Adjust the path based on your project structure
 
-const Email = sequelize.define('Email', {
+const Email = sequelize.define("Email", {
   subject: {
     type: DataTypes.STRING,
     allowNull: false,
